@@ -1,0 +1,23 @@
+module UP2(q, m, clear, clk);
+	input m, clear, clk;
+	output [3:0] q;
+	JK_flipflop jk0(q[0], , 1, 1, clk, clear);
+	JK_flipflop jk1(q[1], , (m^q[0]), (m^q[0]), clk, clear);
+	JK_flipflop jk2(q[2], , m&(~q[0])&(~q[1])+(~m)&q[0]&q[1], m&(~q[0])&(~q[1])+(~m)&q[0]&q[1], clk, clear);
+endmodule 
+	
+module JK_flipflop(q, q_bar, j, k, clk, clear);
+	input j, k, clear, clk;
+	output q, q_bar;
+	wire a, b, c, d, y, y_bar;
+	nand(a, j, q_bar, clear, clk);
+	nand(b, k, q, clk);
+	nand(y, a, y_bar);
+	nand(y_bar, b, clear, y);
+	not(c_bar, clk);
+
+	nand(c, c_bar, y);
+	nand(d, c_bar, y_bar);
+	nand(q, c, q_bar);
+	nand(q_bar, q, d, clear);
+endmodule
