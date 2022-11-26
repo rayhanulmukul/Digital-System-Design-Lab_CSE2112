@@ -28,7 +28,7 @@ module Up_Down_Stimulus;
 	Up_Down_Synchronous up1(q, m, clear, clk);
 	initial
 	begin
-	  m = 1'b0;
+	  u = 1'b0;
 	  clear = 1'b0;
 	  #0 clear = 1'b1;
 	  forever #50 clk = ~clk;

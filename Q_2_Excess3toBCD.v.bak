@@ -9,7 +9,7 @@ endmodule
 module excess3bcd_stimulus;
 	reg [3:0] a;
 	wire [3:0] b;
-	excess3tobcd bcd(b, a);
+	excess3tobcd(b, a);
 	initial
 	begin
 	    a = 4'b0011;

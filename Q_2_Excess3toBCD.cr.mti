@@ -1,0 +1,34 @@
+C:/Users/Tesla/Documents/DSD_LAB/Q_2_Excess3toBCD.v {1 {vlog -work work -stats=none C:/Users/Tesla/Documents/DSD_LAB/Q_2_Excess3toBCD.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module excess3tobcd
+-- Compiling module excess3bcd_stimulus
+
+Top level modules:
+	excess3bcd_stimulus
+
+} {} {}} C:/Users/Tesla/Documents/DSD_LAB/Q_5_UP_DOWN.v {1 {vlog -work work -stats=none C:/Users/Tesla/Documents/DSD_LAB/Q_5_UP_DOWN.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module Up_Down_Synchronous
+-- Compiling module JK_flipflop
+-- Compiling module Up_Down_Stimulus
+
+Top level modules:
+	Up_Down_Stimulus
+
+} {} {}} C:/Users/Tesla/Documents/DSD_LAB/Q_4_mod10Asynchronous.v {1 {vlog -work work -stats=none C:/Users/Tesla/Documents/DSD_LAB/Q_4_mod10Asynchronous.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module MOD10Asnchr
+-- Compiling module JK_flipflop
+
+Top level modules:
+	MOD10Asnchr
+
+} {} {}} C:/Users/Tesla/Documents/DSD_LAB/test.v {1 {vlog -work work -stats=none C:/Users/Tesla/Documents/DSD_LAB/test.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module up
+-- Compiling module jk
+
+Top level modules:
+	up
+
+} {} {}}
